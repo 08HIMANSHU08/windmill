@@ -1,0 +1,14 @@
+version: '3'
+services:
+  nodejs:
+    container_name: bpp_service
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3011:3011"  # If your application listens on a specific port, change it accordingly
+    networks:
+      - nginx-network
+networks:
+  nginx-network:
+    external: true

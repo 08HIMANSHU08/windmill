@@ -1,0 +1,18 @@
+{
+    "bpp_gateway": {
+        "port": 3010,
+        "host": "bpp_gateway-pre-prod"
+      },
+    "bpp_service": {
+        "port": 3011,
+        "host": "bpp_service-pre-prod"
+      },
+    "form_service": {
+        "port": 3012,
+        "host": "form_service-pre-prod"
+      },
+    "catalog_service": {
+        "port": 3013,
+        "host": "catalog_service-pre-prod"
+      }
+}

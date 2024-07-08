@@ -1,0 +1,17 @@
+{
+    "subscriber_id": "staging-ondc.cateina.com",
+    "status": "SUBSCRIBED",
+    "ukId": "4ea66b12-8130-49ae-abf2-c794455c0395",
+    "subscriber_url": "https://staging-ondc.cateina.com/bpp/v1",
+    "country": "IND",
+    "domain": "ONDC:FIS13",
+    "valid_from": "2024-01-27T13:44:54.101Z",
+    "valid_until": "2029-01-27T13:44:54.101Z",
+    "type": "BPP",
+    "signing_public_key": "B+iKXFgoDF6K7YMp6/8DvxB3y10uHDDyzIdOeAQ7Gbk=",
+    "encr_public_key": "MCowBQYDK2VuAyEAowRFHdUtndRG8CXVhhlp4b2UOFFI+Ha2ns3kplcE3Ds=",
+    "created": "2024-03-12T09:31:41.681Z",
+    "updated": "2024-03-12T09:31:41.682Z",
+    "br_id": "4ea66b12-8130-49ae-abf2-c794455c0395",
+    "city": "std:022"
+}

@@ -1,0 +1,18 @@
+{
+    "bpp_gateway": {
+        "port": 3010,
+        "host": "localhost"
+      },
+    "bpp_service": {
+        "port": 3011,
+        "host": "localhost"
+      },
+    "form_service": {
+        "port": 3012,
+        "host": "localhost"
+      },
+    "catalog_service": {
+        "port": 3013,
+        "host": "localhost"
+      }
+}
