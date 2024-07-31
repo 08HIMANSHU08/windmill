@@ -7,24 +7,12 @@ import Sequelize from 'sequelize';
 // const Logger = require('./logger') //<---es5
 import Logger from './logger.js';
 
-// const fastify = require('fastify')({
-//   logger: Logger,
-//   pluginTimeout: (process.env.NODE_ENV === 'development') ? -1 : 25000
-//   // ajv: {
-//   //   customOptions: {
-//   //     strict: false
-//   //   }
-//   // }
-// }) //<---es5
+
 import Fastify from 'fastify';
 const fastify = Fastify({
   logger: Logger,
   pluginTimeout: (process.env.NODE_ENV === 'development') ? -1 : 25000,
-  // ajv: {
-  //   customOptions: {
-  //     strict: false
-  //   }
-  // }
+ 
 });
 
 // fastify.register(require('@fastify/formbody')) //<---es5
@@ -79,23 +67,17 @@ import sequelizeFastify from 'sequelize-fastify';
       )
     }
   })
-// set Boom as the error handler
-// fastify.register(require('fastify-boom')) //<---es5
+
 import fastifyBoom from 'fastify-boom';
 fastify.register(fastifyBoom);
 
-// fastify.register(require('./setup')) //<---es5
 import setup from './setup.js';
 fastify.register(setup);
 
-// fastify.register(require('./BppPassThrough')) //<---es5
-import BppPassThrough from './BppPassThrough/index.js'; //NEED CHANGES
-fastify.register(BppPassThrough);
-// fastify.addHook('onRequest', (request, reply, next) => {
-//   next()
-// })
+import WindmillPassThrough from './WindmillPassThrough/index.js'; 
+fastify.register(WindmillPassThrough);
 
-const PORT = config.get('bpp_service.port');
+const PORT = config.get('windmill_service.port');
 const HOST = '0.0.0.0';
 
 fastify.listen({port: PORT, host: HOST}, async(err, address) => {

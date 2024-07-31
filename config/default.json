@@ -14,5 +14,9 @@
     "catalog_service": {
         "port": 3013,
         "host": "catalog_service"
+      },
+      "windmill_service": {
+        "port": 8100,
+        "host": "windmill_service"
       }
 }
