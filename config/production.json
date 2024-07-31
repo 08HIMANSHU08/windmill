@@ -1,5 +1,6 @@
 {
   "windmill_service": {
-    "port": 8100
+    "port": 8100,
+     "host": "windmill_service"
   }
 }
