@@ -9,9 +9,9 @@
   },
   "scripts": {
     "test": "node --test test/**/*.test.js",
-    "start": "node index.js",
+    "start": "NODE_ENV=default node index.js",
     "start:local": "NODE_ENV=mymachine NODE_CONFIG_DIR=config node index.js",
-    "start:preprod": "NODE_ENV=preprod NODE_CONFIG_DIR=config node index.js",
+    "start:preprod": "NODE_ENV=production NODE_CONFIG_DIR=config node index.js",
     "lint": "eslint ./ --fix"
   },
   "keywords": [],
